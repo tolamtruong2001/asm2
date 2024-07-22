@@ -53,7 +53,8 @@
 
                 // Update DB
                 $sqlupdate = "UPDATE product
-                              SET product_name = '$product_name' , product_price='$product_price' , product_description='$product_description' , product_image='$target_file'
+                              SET product_name = '$product_name' , product_price='$product_price' , product_description='$product_description' ,
+                               product_image='$target_file'
                               WHERE product_id='$id'";
             
                 if($conn -> query($sqlupdate)){
